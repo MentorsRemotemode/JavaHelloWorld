@@ -17,10 +17,10 @@ echo "And compare it to: `cat ../test/expected.txt`"
 if diff -w ../test/expected.txt target/actual.txt
     then
         echo SUCCESS
-        let ret=0
+        let $ret=0
     else
         echo FAIL
-        let ret=255
+        let $ret=255
         exit $ret
 fi
 rm -rf target
