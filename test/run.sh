@@ -11,8 +11,8 @@ fi
 
 java -jar target/gs-maven-0.1.0.jar | tail -1 > target/actual.txt
 
-echo "Let's look at the actual results: `cat target/actual.txt`"
-echo "And compare it to: `cat ../test/expected.txt`"
+echo "Let's look at the actual results: cat target/actual.txt"
+echo "And compare it to: cat ../test/expected.txt"
 
 if diff -w ../test/expected.txt target/actual.txt
     then
